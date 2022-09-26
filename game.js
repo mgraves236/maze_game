@@ -76,13 +76,14 @@ function mainGame(currentTime) {
 
 
 
-    // if (_snake.endGame()) {
-    //     _ctx.clearRect(0, 0, _canvas.width, _canvas.height);
-    //     drawBoard();
-    //     _canvas.addEventListener('click', clickBtn);
-    //     drawButton();
-    //     return;
-    // }
+    if (_player.endGame()) {
+        console.log('end game')
+        // _ctx.clearRect(0, 0, _canvas.width, _canvas.height);
+        // drawBoard();
+        // _canvas.addEventListener('click', clickBtn);
+        // drawButton();
+        // return;
+    }
     // _snake.eat();
     // _snake.update();
     // _snake.show();

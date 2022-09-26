@@ -17,7 +17,7 @@ class Player {
 
     isMove(i, j) {
         for (let k = 0; k < grid.length; k++) {
-            if(this.position.i === grid[k].i && this.position.j === grid[k].j) {
+            if (this.position.i === grid[k].i && this.position.j === grid[k].j) {
                 if (i === 1 && grid[k].walls[1] === true) {
                     return false;
                 }
@@ -35,6 +35,11 @@ class Player {
         }
         return true;
     }
+
+    endGame() {
+        return (this.position.i === grid[grid.length - 1].i && this.position.j === grid[grid.length - 1].j)
+    }
+
     draw() {
         _ctx.save();
         let x = this.position.i * w;
