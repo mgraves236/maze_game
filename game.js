@@ -84,9 +84,6 @@ function mainGame(currentTime) {
         // drawButton();
         // return;
     }
-    // _snake.eat();
-    // _snake.update();
-    // _snake.show();
 }
 
 window.addEventListener('keydown', function (e) {
